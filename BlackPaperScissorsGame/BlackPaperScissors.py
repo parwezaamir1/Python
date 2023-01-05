@@ -26,11 +26,11 @@ elif player == "paper":
     if computer == "scissors":
         print("Computer wins")
     else:
-        print("Player1 wins")
+        print("Player wins")
 elif player == "scissors":
     if computer == "rock":
         print("Computer wins")
     else:
-        print("Player1 wins")
+        print("Player wins")
 else:
-    print("Something went wrong")
+    print("Play valid move")
