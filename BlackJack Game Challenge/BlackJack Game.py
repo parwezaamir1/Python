@@ -215,7 +215,6 @@ while True:
     # Ask to play again
     new_game = input("Would you like to play another hand? Enter 'y' or 'n' ")
 
-
     if new_game[0].lower() == 'y':
         playing = True
         continue

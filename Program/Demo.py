@@ -1,6 +1,28 @@
-#SPY GAME: Write a function that takes in a list of integers and returns True if it contains 007 in order
-# spy_game([1,2,4,0,0,7,5]) --> True
-# spy_game([1,0,2,4,0,5,7]) --> True
- #spy_game([1,7,2,0,4,5,0]) --> False
+print("Rock.....")
+print("Paper.....")
+print("Scissors.....")
+
+player1 = input("Player 1, make your move: ")
+player2 = input("Player 2, make your move: ")
+
+if player1 == "rock" and player2 == "scissors":
+    print("Player1 wins")
+elif player1 == "rock" and player2 == "paper":
+    print("Player2 wins")
+elif player1 == "paper"  and player2 == "scissors":
+    print("Player2 wins")
+elif player1 == "paper" and player2 == "rock":
+    print("Player1 wins")
+elif player1 == "scissors" and player2 == "rock":
+    print("Player2 wins")
+elif player1 == "scissors" and player2 == "paper":
+    print("Player1 wins")
+elif player1 == player2:
+    print("It's a tie!")
+else:
+    print("Something went wrong")
+
+
+
 
 
