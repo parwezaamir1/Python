@@ -1,0 +1,32 @@
+Class:- 
+    Class is a blueprint of how an object is going to behave.
+    It consists of state i,e data or property or attribute and behavoiur i,e methods
+
+    Class name follows Pascal case and attribute, methods name should be in snake case
+
+    e.g-
+       Class Car 
+            attribute:- color, mileage, engine
+            methods:- calculate_avg_speed, open_airbags, show_gps  
+
+    
+Object:-
+    Object is an instance of the class. 
+
+Methods:- 
+    methods are special functions which are written inside a class.
+
+Constructor:- 
+    It is a special menthod which run itself when an object gets created 
+    We can add configuration related code, we write code in constructor which 
+               we don't want to give access to the object or user
+
+     def __init__(self)
+
+self:- 
+    self refers to the object
+    The self keyword is a special keyword in Python that represents the instance of the class.
+    It is used to access the attributes and methods of the class. It is a convention and not a keyword. 
+    It is the first parameter of the methods that represents the instance of the class.
+
+  
