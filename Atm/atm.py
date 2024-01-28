@@ -1,3 +1,10 @@
+""" ---Create a class called Atm
+    --- Create a constructor with two attributes
+            pin and balance
+    --- Create methods to create_pin, deposit, withdraw, check_balance and perform some 
+    operations
+"""
+
 class Atm:
 
     def __init__(self):
@@ -66,8 +73,8 @@ class Atm:
 
 
 sbi = Atm()
-sbi.create_pin()
-sbi.deposit()
-sbi.check_balance()
-sbi.withdraw()
-sbi.check_balance()
+# sbi.create_pin()
+# sbi.deposit()
+# sbi.check_balance()
+# sbi.withdraw()
+# sbi.check_balance()
