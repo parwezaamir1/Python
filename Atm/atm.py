@@ -9,8 +9,8 @@ class Atm:
 
     def __init__(self):
 
-        self.balance = 0
-        self.pin = ""
+        self.__balance = 0
+        self.__pin = ""
 
         self.menu()
 
@@ -39,25 +39,36 @@ class Atm:
             print("Bye")         
 
 
+
     def create_pin(self):
-        self.pin = input("Enter your pin ")
+        self.__pin = input("Enter your pin ")
         print("Pin set successfully")
+
+    def get_pin(self):
+        return self.__pin
+    
+    def set_pin(self, new_pin):
+        if new_pin== str:
+            self.__pin = new_pin
+            print("Pin changed")
+        else:
+            print("not allowed")
 
     def deposit(self):
         temp = input("Enter your pin ")
-        if temp == self.pin:
-            amount = int(input("Enter the amount "))
-            self.balance = self.balance + amount
+        if temp == self.__pin:
+            amount = int(input("Enter the amount to deposit "))
+            self.__balance = self.__balance + amount
             print("Deposit successful")
         else:
             print("Invalid pin ")
 
     def withdraw(self):
         temp = input("Enter you pin ")
-        if temp == self.pin:
-            amount = int(input("Enter your amount "))
-            if amount < self.balance:
-                self.balance -= amount
+        if temp == self.__pin:
+            amount = int(input("Enter your amount to withdraw "))
+            if amount < self.__balance:
+                self.__balance -= amount
                 print("Withdrawn successful")
             else:
                 print("Insufficient funds")
@@ -66,15 +77,14 @@ class Atm:
     
     def check_balance(self):
         temp = input("Enter your pin ")
-        if temp == self.pin:
-            print(self.balance)
+        if temp == self.__pin:
+            print(self.__balance)
         else:
             print("Invalid pin")
 
 
 sbi = Atm()
-# sbi.create_pin()
-# sbi.deposit()
-# sbi.check_balance()
-# sbi.withdraw()
-# sbi.check_balance()
+sbi.__pin = 'gftyu'   # __pin is private so we cannot changes it. __pin now refers to _Atm__pin
+                      # we can change pin by using sbi._Atm__pin. but its best practice to
+                    # create getter and setter methods to change it 
+print(sbi.get_pin())

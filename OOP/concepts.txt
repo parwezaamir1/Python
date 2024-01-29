@@ -1,0 +1,58 @@
+Object:-
+    Object is an instance of the class. 
+
+Methods:- 
+    methods are special functions which are written inside a class.
+
+Constructor:- 
+    It is a special menthod which run itself when an object gets created 
+    We can add configuration related code, we write code in constructor which 
+               we don't want to give access to the object or user
+
+     def __init__(self)
+
+self:- 
+    self refers to the object
+    The self keyword is a special keyword in Python that represents the instance of the class.
+    It is used to access the attributes and methods of the class. It is a convention and not a keyword. 
+    It is the first parameter of the methods that represents the instance of the class.
+
+Instance variable:-
+    It is a kind of variable for which the value of the variable is differnt for 
+    different object.
+    All the attributes or variables are created inside the constructor are instance variable.
+
+Private attributes:-
+    if we place __ before attributes or methods, that becomes Private
+
+    eg.
+    if a class Atm has attribute balance
+    __balance becomes private and changes to 
+          _Atm__balance 
+
+Encapsulation:-
+    It is the process of bundling data and the methods that work on that data together
+     into a single unit. 
+    Encapsulation is important because it helps to protect data from being 
+    accidentally modified or corrupted. It also makes code more modular and reusable.
+
+    In Python, encapsulation is achieved by using private attributes and public methods. 
+    Private attributes are attribute or variable that can only be accessed by methods within the same class. 
+    Public methods are methods that can be accessed by any code that has access to the object.
+    To create a private attribute in Python, you simply need to prefix the variable name with double underscore (__). 
+    
+    For example, the following code creates a private variable called __name:
+
+    class Person:
+        def __init__(self, name):
+            self.__name = name
+
+        def get_name(self):
+            return self.__name
+
+Reference variable:-
+    we create object of a Atm class 
+        Atm()   ---- objects gets created but we cann't use it
+        sbi = Atm()  --- here sbi acts as a Reference variable to store the object Atm
+
+    
