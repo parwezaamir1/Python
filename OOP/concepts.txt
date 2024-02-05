@@ -98,4 +98,33 @@ Reference variable:-
         Atm()   ---- objects gets created but we cann't use it
         sbi = Atm()  --- here sbi acts as a Reference variable to store the object Atm
 
-    
+Relationship:-
+    1. Aggregate
+    When we have HAS-A relationship between two class called Aggregate
+    eg- lets say we have two classes Customer and Address
+        here, each customer object has-a relationship with Address
+
+    2. Inheritance (IS-A relationship):-
+        - Inheritance is in upward direction not upward to downward
+        - We can inherit data member, methods and even constructor
+        - Private members are not inherited
+
+        Inheritance is a fundamental concept in object-oriented programming (OOP) that 
+        allows a class (called the child or subclass) to inherit properties and behaviors 
+        from another class (called the parent or superclass). 
+        This concept promotes code reusability and helps create a hierarchy of classes.
+    class ParentClass:
+        # Attributes and methods of the parent class
+
+    class ChildClass(ParentClass):
+        # Additional attributes and methods specific to the child class
+
+Polymorphism:-
+    1. Method Overriding
+    2. Method Overloading
+    3. Operator Overloading
+
+
+
+
+
