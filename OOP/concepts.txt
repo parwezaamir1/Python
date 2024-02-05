@@ -19,7 +19,7 @@ self:-
 
 Instance variable:-
     It is a kind of variable for which the value of the variable is differnt for 
-    different object.
+     different object.
     All the attributes or variables are created inside the constructor are instance variable.
 
 Private attributes:-
