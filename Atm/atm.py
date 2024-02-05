@@ -7,12 +7,28 @@
 
 class Atm:
 
-    def __init__(self):
+    #static/class variable
+    __counter = 1
 
+    def __init__(self):
+        #instance variable
         self.__balance = 0
         self.__pin = ""
+        self.sno = Atm.__counter
+        Atm.__counter += 1
 
         self.menu()
+
+    @staticmethod
+    def get_counter():
+        return Atm.__counter
+    
+    @staticmethod
+    def set_counter(new):
+        if type(new) == int:
+            Atm.__counter = new
+        else:
+            print("Not allowed")
 
     def menu(self):
         user_input = input("""

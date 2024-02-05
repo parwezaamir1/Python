@@ -21,6 +21,49 @@ Instance variable:-
     It is a kind of variable for which the value of the variable is differnt for 
      different object.
     All the attributes or variables are created inside the constructor are instance variable.
+    eg. 
+        pin, balance is different for evry customer
+
+Static/class variable:-
+    In Python, static (or class) variables are variables that are shared among 
+    all instances (objects) of a class. 
+    They are associated with the class itself rather than with instances of the class.
+    These variables are defined within the class but outside of any method.
+
+    ex.
+     class MyClass:
+    # Static variable (class variable)
+    static_variable = 0
+
+    def __init__(self, instance_variable):
+        # Instance variable
+        self.instance_variable = instance_variable
+        # Accessing the static variable within the constructor
+        MyClass.static_variable += 1
+
+# Creating instances of MyClass
+obj1 = MyClass("Instance 1")
+obj2 = MyClass("Instance 2")
+obj3 = MyClass("Instance 3")
+
+# Accessing instance variables
+print(obj1.instance_variable)  # Output: Instance 1
+print(obj2.instance_variable)  # Output: Instance 2
+print(obj3.instance_variable)  # Output: Instance 3
+
+# Accessing the static variable through the class and instances
+print(MyClass.static_variable)  # Output: 3
+print(obj1.static_variable)     # Output: 3
+print(obj2.static_variable)     # Output: 3
+print(obj3.static_variable)     # Output: 3
+
+
+    Static variables are accessed using the class name (MyClass.static_variable) or 
+    through an instance (obj1.static_variable). 
+    Any changes made to the static variable are reflected across all instances
+    and the class itself.
+
+
 
 Private attributes:-
     if we place __ before attributes or methods, that becomes Private
