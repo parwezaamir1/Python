@@ -120,9 +120,28 @@ Relationship:-
         # Additional attributes and methods specific to the child class
 
 Polymorphism:-
-    1. Method Overriding
-    2. Method Overloading
-    3. Operator Overloading
+        Polymorphism is often used in Class methods,
+             where we can have multiple classes with the same method name.
+    1. Method Overriding:- overriding means we can use same name function name
+                             with same parameters of the base class in the derived class
+    2. Method Overloading:-In overloading we can use same method name with different
+                     parameters for multiple times for different tasks with on a class.
+
+    3. Operator Overloading:- Operator Overloading means giving extended meaning beyond
+                         their predefined operational meaning. 
+                         For example operator + is used to add two integers as well
+                          as join two strings and merge two lists.
+                         It is achievable because ‘+’ operator is overloaded by int class 
+                         and str class.
+                         You might have noticed that the same built-in operator or function
+                     shows different behavior for objects of different classes, 
+                        this is called Operator Overloading.
+
+Super():-  the super() function is used to refer to the parent class or superclass.
+             It allows you to call methods defined in the superclass from the subclass,
+             enabling you to extend and customize the functionality inherited
+              from the parent class
+        - It invokes methods and constructor of parent class 
 
 
 
