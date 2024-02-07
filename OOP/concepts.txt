@@ -144,6 +144,42 @@ Super():-  the super() function is used to refer to the parent class or supercla
         - It invokes methods and constructor of parent class 
 
 
+API(Application programming Interface):-
+    It is basically functions or set of functions that allows developer to interact remote 
+    resource server. It follows set of rules and standard to communicate.
+    The application sending the request is called the client,
+     and the application sending the response is called the server
+
+    - APIs are mechanisms that enable two software components to communicate with each other
+     using a set of definitions and protocols.
+
+    e.g.-
+     For example, the weather bureau’s software system contains daily weather data.
+      The weather app on your phone “talks” to this system via APIs and
+       shows you daily weather updates on your phone.
+
+    SOAP APIs 
+    These APIs use Simple Object Access Protocol.
+     Client and server exchange messages using XML. 
+     This is a less flexible API that was more popular in the past.
+
+    REST APIs
+    These are the most popular and flexible APIs found on the web today. 
+    The client sends requests to the server as data. The server uses this client input
+    to start internal functions and returns output data back to the client.
+     
+        REST stands for Representational State Transfer. 
+        REST defines a set of functions like GET, PUT, DELETE, etc. that clients can use 
+        to access server data. Clients and servers exchange data using HTTP(Hypertext Transfer
+        Protocol).
+        HTTPS(Hypertext Transfer protocol secure)
+
+    The main feature of REST API is statelessness. 
+    Statelessness means that servers do not save client data between requests. 
+    Client requests to the server are similar to URLs you type in your browser to 
+    visit a website. The response from the server is plain data, 
+        without the typical graphical rendering of a web page.
+
 
 
 
