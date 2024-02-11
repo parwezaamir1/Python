@@ -1,10 +1,13 @@
-x = input("Enter the first variable ")
-y = input("Enter the second variable ")
+# Input from user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
 
-# temp = x
-# x = y
-# y = temp
+print(f"Before swapping: num1 = {num1}, num2 = {num2}")
 
-x,y = y,x
-print(f"The value of first variable after swapping {x} ")
-print(f"The value of second variable after swapping {y} ")
+# Swapping logic
+temp = num1
+num1 = num2
+num2 = temp
+# num1, num2 = num2, num1
+
+print(f"After swapping: num1 = {num1}, num2 = {num2}")
